@@ -117,7 +117,7 @@ var GameTrab = (function  () {
 		
 		// ************ inseto ******************
 		
-		//if (this.fase == 2) {
+		if (this.fase == 2) {
 
 		this.motoBug = this.game.add.sprite(400, 180, 'motobug_left');
 		this.game.physics.p2.enable(this.motoBug);
@@ -126,7 +126,7 @@ var GameTrab = (function  () {
 		this.motoBug.body.data.shapes[0].sensor = true;
 		this.motoBug.body.onBeginContact.add(this.bugAttacksDude, this);
 		
-		//} 
+		} 
 		
 		// ************ fim inseto **************
 
